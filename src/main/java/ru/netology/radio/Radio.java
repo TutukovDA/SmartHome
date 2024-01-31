@@ -1,4 +1,5 @@
 package ru.netology.radio;
+
 public class Radio {
 
     private int currentVolume;
@@ -8,14 +9,14 @@ public class Radio {
 
     public void setCurrentVolume(int newCurrentVolume) {
         if (newCurrentVolume > maxVolume) {
-           currentVolume=maxVolume;
-           return;
-        }
-        if (newCurrentVolume < minVolume) {
-            currentVolume=minVolume;
+            currentVolume = maxVolume;
             return;
         }
-        currentVolume=newCurrentVolume;
+        if (newCurrentVolume < minVolume) {
+            currentVolume = minVolume;
+            return;
+        }
+        currentVolume = newCurrentVolume;
     }
 
     private int maxVolume = 100;
