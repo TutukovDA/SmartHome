@@ -56,18 +56,18 @@ public class Radio {
 
 
     public int nextRadioChannel() {
-        if (currentRadioChannel != 9) {
+        if (currentRadioChannel != maxCountRadioStation) {
             currentRadioChannel++;
         } else
-            currentRadioChannel = 0;
+            currentRadioChannel = minCountRadioStation;
         return currentRadioChannel;
     }
 
     public int prevRadioChannel() {
-        if (currentRadioChannel != 0) {
+        if (currentRadioChannel != minCountRadioStation) {
             currentRadioChannel--;
         } else {
-            currentRadioChannel = 9;
+            currentRadioChannel = maxCountRadioStation;
         }
         return currentRadioChannel;
     }
