@@ -29,14 +29,18 @@ public class Radio {
     public int increaseVolume() {
         if (currentVolume != maxVolume) {
             currentVolume++;
-        } else currentVolume = maxVolume;
+        } else {
+            currentVolume = maxVolume;
+        }
         return currentVolume;
     }
 
     public int turnDownVolume() {
         if (currentVolume != minVolume) {
             currentVolume--;
-        } else currentVolume = minVolume;
+        } else {
+            currentVolume = minVolume;
+        }
         return currentVolume;
     }
 
@@ -58,8 +62,9 @@ public class Radio {
     public int nextRadioChannel() {
         if (currentRadioChannel != maxCountRadioStation) {
             currentRadioChannel++;
-        } else
+        } else {
             currentRadioChannel = minCountRadioStation;
+        }
         return currentRadioChannel;
     }
 
@@ -71,5 +76,4 @@ public class Radio {
         }
         return currentRadioChannel;
     }
-
 }
