@@ -25,13 +25,15 @@ public class Radio {
     private int minCountRadioStation = 0;
     private int maxVolume = 100;
     private int minVolume = 0;
-    public Radio (){
+
+    public Radio() {
 
     }
-    public Radio (int size){
-        this.minCountRadioStation=minCountRadioStation;
-        this.maxCountRadioStation=minCountRadioStation+size-1;
-        this.currentRadioChannel=minCountRadioStation;
+
+    public Radio(int size) {
+        this.minCountRadioStation = minCountRadioStation;
+        this.maxCountRadioStation = minCountRadioStation + size - 1;
+        this.currentRadioChannel = minCountRadioStation;
 
     }
 

@@ -8,7 +8,7 @@ public class RadioTest {
 
     @Test
     public void setRadioChannelBelowBorderTest() {
-        channel.setCurrentRadioChannel(channel.getMinCountRadioStation()-1);
+        channel.setCurrentRadioChannel(channel.getMinCountRadioStation() - 1);
 
         int expected = 0;
         int actual = channel.getCurrentRadioChannel();
@@ -26,7 +26,7 @@ public class RadioTest {
 
     @Test
     public void setRadioChannelAboveLowBorderTest() {
-        channel.setCurrentRadioChannel(channel.getMinCountRadioStation()+1);
+        channel.setCurrentRadioChannel(channel.getMinCountRadioStation() + 1);
 
         int expected = 1;
         int actual = channel.getCurrentRadioChannel();
@@ -35,9 +35,9 @@ public class RadioTest {
 
     @Test
     public void setRadioChannelLowUpperBorderTest() {
-        channel.setCurrentRadioChannel(channel.getMaxCountRadioStation()-1);
+        channel.setCurrentRadioChannel(channel.getMaxCountRadioStation() - 1);
 
-        int expected = channel.getMaxCountRadioStation()-1;
+        int expected = channel.getMaxCountRadioStation() - 1;
         int actual = channel.getCurrentRadioChannel();
         Assertions.assertEquals(expected, actual);
     }
@@ -53,7 +53,7 @@ public class RadioTest {
 
     @Test
     public void setRadioChannelAboveUpperBorderTest() {
-        channel.setCurrentRadioChannel(channel.getMaxCountRadioStation()+1);
+        channel.setCurrentRadioChannel(channel.getMaxCountRadioStation() + 1);
 
         int expected = channel.getMinCountRadioStation();
         int actual = channel.getCurrentRadioChannel();
@@ -73,7 +73,7 @@ public class RadioTest {
 
     @Test
     public void nextRadioChannelAboveLowBorderTest() {
-        channel.setCurrentRadioChannel(channel.getMinCountRadioStation()+1);
+        channel.setCurrentRadioChannel(channel.getMinCountRadioStation() + 1);
 
         channel.nextRadioChannel();
 
@@ -84,7 +84,7 @@ public class RadioTest {
 
     @Test
     public void nextRadioChannelBelowUpperBorderTest() {
-        channel.setCurrentRadioChannel(channel.getMaxCountRadioStation()-1);
+        channel.setCurrentRadioChannel(channel.getMaxCountRadioStation() - 1);
 
         channel.nextRadioChannel();
 
@@ -117,7 +117,7 @@ public class RadioTest {
 
     @Test
     public void prevRadioChannelAboveLowBorderTest() {
-        channel.setCurrentRadioChannel(channel.getMinCountRadioStation()+1);
+        channel.setCurrentRadioChannel(channel.getMinCountRadioStation() + 1);
 
         channel.prevRadioChannel();
 
@@ -128,11 +128,11 @@ public class RadioTest {
 
     @Test
     public void prevRadioChannelBelowUpperBorderTest() {
-        channel.setCurrentRadioChannel(channel.getMaxCountRadioStation()-1);
+        channel.setCurrentRadioChannel(channel.getMaxCountRadioStation() - 1);
 
         channel.prevRadioChannel();
 
-        int expected = channel.getMaxCountRadioStation()-2;
+        int expected = channel.getMaxCountRadioStation() - 2;
         int actual = channel.getCurrentRadioChannel();
         Assertions.assertEquals(expected, actual);
     }
@@ -143,7 +143,7 @@ public class RadioTest {
 
         channel.prevRadioChannel();
 
-        int expected = channel.getMaxCountRadioStation()-1;
+        int expected = channel.getMaxCountRadioStation() - 1;
         int actual = channel.getCurrentRadioChannel();
         Assertions.assertEquals(expected, actual);
     }
