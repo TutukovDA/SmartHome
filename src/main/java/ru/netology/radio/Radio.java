@@ -4,6 +4,10 @@ public class Radio {
 
     private int currentVolume;
     private int currentRadioChannel;
+    private int maxCountRadioStation = 9;
+    private int minCountRadioStation = 0;
+    private int maxVolume = 100;
+    private int minVolume = 0;
 
     public int getMaxCountRadioStation() {
         return maxCountRadioStation;
@@ -20,11 +24,6 @@ public class Radio {
     public void setMinCountRadioStation(int minCountRadioStation) {
         this.minCountRadioStation = minCountRadioStation;
     }
-
-    private int maxCountRadioStation = 9;
-    private int minCountRadioStation = 0;
-    private int maxVolume = 100;
-    private int minVolume = 0;
 
     public Radio() {
 
