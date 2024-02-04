@@ -25,9 +25,7 @@ public class Radio {
         this.minCountRadioStation = minCountRadioStation;
     }
 
-    public Radio() {
-
-    }
+gi
 
     public Radio(int size) {
         this.minCountRadioStation = minCountRadioStation;
