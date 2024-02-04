@@ -1,5 +1,8 @@
 package ru.netology.radio;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class Radio {
 
     private int currentVolume;
@@ -24,8 +27,6 @@ public class Radio {
     public void setMinCountRadioStation(int minCountRadioStation) {
         this.minCountRadioStation = minCountRadioStation;
     }
-
-gi
 
     public Radio(int size) {
         this.minCountRadioStation = minCountRadioStation;
