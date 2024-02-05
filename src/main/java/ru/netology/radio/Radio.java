@@ -22,7 +22,6 @@ public class Radio {
     }
 
     public int getCurrentVolume() {
-
         return currentVolume;
     }
 
@@ -45,7 +44,6 @@ public class Radio {
     }
 
     public int getCurrentRadioChannel() {
-
         return currentRadioChannel;
     }
 
