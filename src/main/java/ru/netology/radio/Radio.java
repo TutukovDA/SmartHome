@@ -9,18 +9,6 @@ public class Radio {
     private int maxVolume = 100;
     private int minVolume = 0;
 
-    public int getMaxCountRadioStation() {
-        return maxCountRadioStation;
-    }
-
-    public void setMaxCountRadioStation(int maxCountRadioStation) {
-        this.maxCountRadioStation = maxCountRadioStation;
-    }
-
-    public int getMinCountRadioStation() {
-        return minCountRadioStation;
-    }
-
     public void setMinCountRadioStation(int minCountRadioStation) {
         this.minCountRadioStation = minCountRadioStation;
     }
@@ -33,7 +21,19 @@ public class Radio {
         this.minCountRadioStation = minCountRadioStation;
         this.maxCountRadioStation = minCountRadioStation + size - 1;
         this.currentRadioChannel = minCountRadioStation;
+    }
 
+
+    public int getMaxCountRadioStation() {
+        return maxCountRadioStation;
+    }
+
+    public void setMaxCountRadioStation(int maxCountRadioStation) {
+        this.maxCountRadioStation = maxCountRadioStation;
+    }
+
+    public int getMinCountRadioStation() {
+        return minCountRadioStation;
     }
 
     public void setCurrentVolume(int newCurrentVolume) {
